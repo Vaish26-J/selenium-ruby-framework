@@ -3,10 +3,13 @@
 # selenium automation framework made with Selenium Webdrivers, Ruby, RSpec
 
 # tech stack
-- Ruby
-- Selenium Webdriver
-- Chromedriver
-- RSpec
+- Language: Ruby
+- Automation: Selenium Webdriver
+- Test Framework : RSpec
+- BuildTool : Bundler
+- Dependency File: Gemfile
+- Logging: Logger
+
 
 # Framework Structre
 
@@ -30,13 +33,15 @@
 - Explicit waits
 - Locators Separated
 - Reusable Driver setup
+- Screenshot on Failure testcases
+- Logging Failures
 
 # Future enhancements
 
-- Screenshot on Failure testcases
 - Reporting tool attachment
 - Spec helper for all the requirements
 - Parallel execution
 - CI/CD integration
 - Cross browser support
+- Data separation
 
