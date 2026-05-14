@@ -16,6 +16,15 @@ RSpec.describe 'LoginPage' do
         sleep 3
     end
 
+    after(:each) do |example|
+        if example.exception
+            puts "example #{example}"
+            file_name = example.description.gsub(' ', '_')
+            identifier = Time.now.strftime('%Y%m%d_%H%M%S')
+            @driver.save_screenshot("screenshots/#{file_name}_#{identifier}.png")
+        end
+    end
+
     after(:all) do
         @driver.quit
     end
@@ -33,6 +42,7 @@ RSpec.describe 'LoginPage' do
     end
 
     it 'Verify authentication error when username is invalid' do
+        sleep 3
         @login_page.login('randomUsername', 'SuperSecretPassword!')
         expect(@driver.find_element(Locators::Login::USERNAME_ERROR).displayed?).to be true
     end
