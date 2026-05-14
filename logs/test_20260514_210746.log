@@ -1,0 +1,7 @@
+# Logfile created on 2026-05-14 21:07:46 +0530 by logger.rb/v1.6.0
+E, [2026-05-14T21:08:00.097411 #23316] ERROR -- : Failed test = Verify authentication error on invalid password
+E, [2026-05-14T21:08:00.097638 #23316] ERROR -- : no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(), "Your Password is invalid!")]"}
+  (Session info: chrome=148.0.7778.168)
+E, [2026-05-14T21:08:07.400725 #23316] ERROR -- : Failed test = Verify authentication error when username is invalid
+E, [2026-05-14T21:08:07.400863 #23316] ERROR -- : no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(), "Your username is invalid!")]"}
+  (Session info: chrome=148.0.7778.168)
