@@ -35,6 +35,7 @@
 - Reusable Driver setup
 - Screenshot on Failure testcases
 - Logging Failures
+- Data separation
 
 # Future enhancements
 
@@ -43,5 +44,4 @@
 - Parallel execution
 - CI/CD integration
 - Cross browser support
-- Data separation
 
