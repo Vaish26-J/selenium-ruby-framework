@@ -1,10 +1,7 @@
-require 'selenium-webdriver'
-require 'pry'
-require 'logger'
-require 'yaml'
-require_relative '../pages/driver'
-require_relative '../pages/login_page'
-require_relative '../locators/login'
+require_relative '../spec_helper'
+# require_relative '../pages/driver'
+# require_relative '../pages/login_page'
+# require_relative '../locators/login'
 
 RSpec.describe 'LoginPage' do
 

@@ -1,7 +1,6 @@
-require_relative '../pages/wait'
-require_relative '../locators/login'
+require_relative '../spec_helper'
 module Pages
-    class Login < Locators::Login
+    class Login < ::Locators::Login
         def initialize(driver)
             @driver = driver
             @wait = WaitHelper::Wait.new(@driver)

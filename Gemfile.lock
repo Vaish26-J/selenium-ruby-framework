@@ -1,6 +1,13 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    allure-rspec (2.29.1)
+      allure-ruby-commons (= 2.29.1)
+      rspec-core (>= 3.8, < 4)
+    allure-ruby-commons (2.29.1)
+      mime-types (>= 3.3, < 4)
+      require_all (>= 2, < 4)
+      rspec-expectations (~> 3.13)
     byebug (13.0.0)
       reline (>= 0.6.0)
     childprocess (4.1.0)
@@ -8,7 +15,12 @@ GEM
     diff-lcs (1.6.2)
     ffi (1.17.4-x64-mingw-ucrt)
     io-console (0.8.2)
+    logger (1.7.0)
     method_source (1.1.0)
+    mime-types (3.7.0)
+      logger
+      mime-types-data (~> 3.2025, >= 3.2025.0507)
+    mime-types-data (3.2026.0414)
     pry (0.16.0)
       coderay (~> 1.1)
       method_source (~> 1.0)
@@ -18,6 +30,7 @@ GEM
       pry (>= 0.13, < 0.17)
     reline (0.6.3)
       io-console (~> 0.5)
+    require_all (3.0.0)
     rexml (3.4.4)
     rspec (3.13.2)
       rspec-core (~> 3.13.0)
@@ -42,6 +55,7 @@ PLATFORMS
   x64-mingw-ucrt
 
 DEPENDENCIES
+  allure-rspec
   ffi
   pry
   pry-byebug
